@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+html {
+    min-height: 100%;
+    background: url("../img/bg-pattern-top.svg") top -580px left -300px no-repeat,
+        url("../img/bg-pattern-bottom.svg") bottom -660px right -290px no-repeat hsl(185, 75%, 39%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.card {
+    flex-direction: column;
+    width: 25.9%;
+    height: 370px;
+    background-image: url('../img/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-photo {
+    position: relative;
+    top: 88px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.card .card-body {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card .card-body p {
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.card .card-body span {
+    color: hsl(227, 10%, 46%);
+}
+
+.card .card-body .name {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.card .card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 25px 0;
+    border-top: 1px solid rgba(175, 175, 175, 0.301);
+}
+
+.card .card-footer p {
+    font-size: 10px;
+    letter-spacing: 0.10em;
+    color: hsl(0, 0%, 59%);
+}
+
+.card .card-footer .stats {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.card .card-footer div {
+    margin-right: 50px;
+}
+
+.card .card-footer div:last-child {
+    margin-right: 0;
+}
+
+@media(max-width: 760px) {
+
+    html {
+        background: url("../img/bg-pattern-top.svg") top -670px left -700px no-repeat,
+            url("../img/bg-pattern-bottom.svg") bottom -600px right -750px no-repeat hsl(185, 75%, 39%);
+    }
+
+    .card {
+        width: 80%;
+    }
+
+}
